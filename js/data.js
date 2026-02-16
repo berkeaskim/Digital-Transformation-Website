@@ -198,10 +198,14 @@ const REFERENCES = [
   'Biggs, K. (2025). <em>Annual Report and Accounts 2024</em>. The Unite Group plc.',
   'Bolton, P., Hubble, S., & Lewis, J. (2025). <em>Higher education student numbers</em>. House of Commons Library.',
   'Corlett, P. (2022). A \'Green Premium\' or a \'Brown Discount\'? Exploring the financial implications of sustainability in commercial real estate. <em>Journal of Property Investment & Finance</em>, 40(3), 289–312.',
+  'Corpus Christi College Oxford. (2023, February 1). Smart Heating System for Corpus reduces our carbon footprint. <a href="https://www.ccc.ox.ac.uk/about-corpus/whats/news/smart-heating-system-corpus-reduces-our-carbon-footprint" target="_blank">https://www.ccc.ox.ac.uk/about-corpus/whats/news/smart-heating-system-corpus-reduces-our-carbon-footprint</a>',
   'EcoSync. (2025). <em>Smart heating control solutions for student accommodation</em>. EcoSync Ltd.',
   'Giddins, R. (2025). <em>Watkin Jones Group Annual Report and Accounts 2024</em>. Watkin Jones plc.',
   'HEPI. (2024). <em>The costs of being a student in London and the rest of the UK</em>. Higher Education Policy Institute.',
   'Ivanova, D., Kaluzhsky, M., & Sheridan, A. (2025). <em>PUMA Energy LLP Research Report: Student attitudes towards energy consumption in purpose-built accommodation</em>. Nottingham Trent University.',
   'Knight Frank. (2025). <em>UK Student Accommodation Outlook 2025/26</em>. Knight Frank LLP.',
+  'Merrick, M. (2025). <em>iQ Student Accommodation sustainability report</em> (Vol. 22, Issue 3). iQ Student Accommodation. <a href="https://www.iqstudentaccommodation.com/sites/default/files/2025-12/ESG_Report_2025_3%201.pdf" target="_blank">https://www.iqstudentaccommodation.com/sites/default/files/2025-12/ESG_Report_2025_3%201.pdf</a>',
+  'Statista. (2025, November 29). Number of students in the United Kingdom 2015&ndash;2024, by accommodation. <a href="https://www.statista.com/statistics/1117816/number-of-students-united-kingdom-by-accommodation/" target="_blank">https://www.statista.com/statistics/1117816/number-of-students-united-kingdom-by-accommodation/</a>',
+  'Team, M. (2025, May 1). Global Student Accommodation (GSA) expands relationship with Measurabl to accelerate sustainability initiatives in Europe. Measurabl. <a href="https://www.measurabl.com/global-student-accommodation-gsa-expands-relationship-with-measurabl-to-accelerate-sustainability-initiatives-in-europe/" target="_blank">https://www.measurabl.com/global-student-accommodation-gsa-expands-relationship-with-measurabl-to-accelerate-sustainability-initiatives-in-europe/</a>',
   'Unipol/NUS. (2025). <em>Accommodation Costs Survey 2024/25: Student housing experiences and preferences</em>. Unipol Student Homes & National Union of Students.'
 ];
