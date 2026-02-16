@@ -93,15 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ─── SOLUTION CARD TOGGLES ───────────────────────── */
-  document.querySelectorAll('.solution-card__toggle').forEach(toggle => {
-    toggle.addEventListener('click', () => {
-      const expand = toggle.previousElementSibling;
-      const isOpen = toggle.classList.contains('open');
-      toggle.classList.toggle('open');
-      expand.classList.toggle('open');
-      toggle.querySelector('span').textContent = isOpen ? 'Show Details' : 'Hide Details';
-    });
-  });
+  // Toggles are bound after dynamic render below
 
   /* ─── JOURNEY MAP TABS ────────────────────────────── */
   document.querySelectorAll('.journey-tab').forEach(tab => {
@@ -221,10 +213,23 @@ document.addEventListener('DOMContentLoaded', () => {
     `).join('');
 
     // Rebind toggles after render
-    solutionsContainer.querySelectorAll('.solution-card__toggle').forEach(toggle => {
+    const allToggles = solutionsContainer.querySelectorAll('.solution-card__toggle');
+    allToggles.forEach(toggle => {
       toggle.addEventListener('click', () => {
         const expand = toggle.previousElementSibling;
         const isOpen = toggle.classList.contains('open');
+
+        // Close all other cards first
+        allToggles.forEach(other => {
+          if (other !== toggle) {
+            other.classList.remove('open');
+            other.previousElementSibling.classList.remove('open');
+            other.setAttribute('aria-expanded', false);
+            other.querySelector('span').textContent = 'Show Details';
+          }
+        });
+
+        // Toggle the clicked card
         toggle.classList.toggle('open');
         expand.classList.toggle('open');
         toggle.setAttribute('aria-expanded', !isOpen);

@@ -1518,6 +1518,27 @@ p {
   stroke: var(--grey-mid);
 }
 
+.flourish-wrapper {
+  background: var(--white);
+  border: 1px solid var(--grey);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: var(--space-lg);
+  width: calc(100% + 160px);
+  margin-left: -80px;
+  max-width: calc(100vw - 2 * var(--space-xl));
+}
+
+.flourish-wrapper .flourish-embed {
+  width: 100%;
+  display: block;
+}
+
+.flourish-wrapper .flourish-embed iframe {
+  width: 100% !important;
+  min-height: 600px;
+}
+
 .journey-grid {
   display: grid;
   grid-template-columns: 140px repeat(5, 1fr);
@@ -2602,6 +2623,12 @@ p {
 
   .solution-card__scores {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flourish-wrapper {
+    width: 100%;
+    margin-left: 0;
+    max-width: 100%;
   }
 
   .journey-tabs {
