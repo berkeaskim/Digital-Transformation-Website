@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phase 3: Digital Solution Presentation — The Wise Group</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23323333' rx='18' width='100' height='100'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='%23FFDC00' font-family='serif' font-weight='bold'>W</text></svg>">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__brand">The Wise Group</div>
+    <div class="loader__bar"><div class="loader__bar-inner"></div></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <div class="nav__logo">W</div>
+        <span class="nav__brand-text">The Wise Group</span>
+        <span class="nav__brand-sep">&times;</span>
+        <img src="img/unite-students-logo.svg" alt="Unite Students" class="nav__client-logo">
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="phase1.html" class="nav__link">
+          <span class="nav__phase-num">1</span> Research &amp; Insights
+        </a>
+        <a href="phase2.html" class="nav__link">
+          <span class="nav__phase-num">2</span> Ideation &amp; Evaluation
+        </a>
+        <a href="phase3.html" class="nav__link active">
+          <span class="nav__phase-num">3</span> Digital Solution
+        </a>
+        <a href="references.html" class="nav__link">References</a>
+      </div>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Phase Header -->
+  <header class="phase-header phase-header--phase3">
+    <div class="phase-header__bg"></div>
+    <div class="phase-header__overlay" aria-hidden="true"></div>
+    <div class="container" style="position:relative; z-index:1;">
+      <div class="phase-header__number">3</div>
+      <h1 class="phase-header__title">Digital Solution Presentation</h1>
+      <p class="phase-header__desc">The Saver Plan &amp; Rewards Dashboard — a real-time energy tracking and gamified rewards platform integrated into the MyUnite app.</p>
+    </div>
+  </header>
+
+  <!-- Key Stats Banner -->
+  <section class="section" style="padding: var(--space-2xl) 0;">
+    <div class="container">
+      <div class="stat-row">
+        <div class="stat-box reveal reveal-delay-1">
+          <div class="stat-box__value">&pound;30.5M</div>
+          <div class="stat-box__label">Annual utility costs (FY2024)</div>
+        </div>
+        <div class="stat-box reveal reveal-delay-2">
+          <div class="stat-box__value">69%</div>
+          <div class="stat-box__label">Students want energy control</div>
+        </div>
+        <div class="stat-box reveal reveal-delay-3">
+          <div class="stat-box__value">85%</div>
+          <div class="stat-box__label">Prioritise bills-included</div>
+        </div>
+        <div class="stat-box reveal reveal-delay-4">
+          <div class="stat-box__value">17/20</div>
+          <div class="stat-box__label">Evaluation score (highest)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Explanation -->
+  <section class="content-section">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <span class="section-label">Digital Solution Explanation</span>
+        <h2>The Saver Plan &amp; Rewards Dashboard</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div id="solution-text">
+      <div class="content-block reveal--left">
+        <h3>Overview of the Saver Plan &amp; Rewards Dashboard</h3>
+        <p>Our proposed solution is a real-time energy and water consumption tracking technology, which would be integrated into the current Unite Students app.</p>
+        <p>Currently, utility costs represent a significant financial challenge for Unite Students, rising by 13% in the past year alone to &pound;30.5 million and contributing to their second-largest expenditure. This is a major factor in a halving of the 2025 total accounting returns from 7.9% to 4.0%. Without intervention, properties at risk of overheating due to utility abuse are projected to triple from 44 to 128 by 2050, risking &pound;15 million in annual income. However, the traditional industry model of fixed, all-inclusive rent actively incentivises the students to overconsume utilities in an attempt to &ldquo;recoup&rdquo; perceived costs already paid. This structural issue necessitates a behavioural rather than purely technical solution.</p>
+      </div>
+
+      <div class="content-block reveal--right">
+        <h3>Strategic Rationale</h3>
+        <p>Research by Ivanova et al. (2025) confirms that students are most likely to adopt sustainable behaviours when real-time feedback is paired with visible monetary rewards like vouchers. Accordingly, our solution aims to use external rewards and social pressure to encourage students to be more conscious about their usage of electricity and water, while helping Unite to reduce its fixed operational costs.</p>
+        <p>The solution will involve using gadgets to track utilities in individual bedrooms, for instance, measuring the amount of time a light or a heater is switched on, or a daily total pressure gauge reading for water taps. Such technologies are already widely deployed in domestic and commercial contexts, and utility providers themselves routinely collect similar data.</p>
+      </div>
+
+      <div class="content-block reveal--left">
+        <h3>How It Works</h3>
+        <p>Unite will establish a two-tier standard for measuring student utility access. Firstly, industry and internal data will be used to calculate the average utility usage across student accommodations. However, as current averages are likely inflated due to widespread overuse, Unite would need to set a &ldquo;bar&rdquo; they deem &ldquo;reasonable&rdquo; for students, for instance, 20% below the industry average. Secondly, Unite would collect updated consumption data. If the weekly usage average falls below the existing standard, this lower level would be adopted as the new &ldquo;bar&rdquo;, preventing standards from becoming outdated or unambitious.</p>
+        <p>From the student perspective, the app would include a real-time reflection of energy and water consumption in the bedroom, alongside a simple summary of recent usage trends (by days, weeks or months), comparing it directly against the &ldquo;bar&rdquo; and raising alerts when you rise above it. By extension, students can earn points based on the percentage and how consistently they stay below the &ldquo;bar&rdquo;. Said points can be redeemed as vouchers with Unite&rsquo;s partners, such as supermarket discounts, Unite renewal discounts or even cheaper plane ticket bookings. Additionally, anonymised competitive features could be introduced, allowing students to compare their performance with other rooms on the same floor. Collective rewards, such as bonus points for the most efficient floor, would drive peer pressure to more sustained reductions in consumption.</p>
+      </div>
+
+      <div class="content-block reveal--right">
+        <h3>AI Component</h3>
+
+        <h4 style="margin-top: var(--space-lg);">What is the AI aspect?</h4>
+        <p>Artificial intelligence and machine learning would be embedded within the app to analyse consumption patterns, generate alerts for both students and facilities staff, and produce short-term forecasts of individual utility usage. These projections could also estimate potential loyalty points, providing students with forward-looking incentives to adjust their behaviour proactively rather than reactively.</p>
+
+
+        <h4 style="margin-top: var(--space-lg);">Ethical Concerns &amp; Mitigations</h4>
+        <p>The only disadvantage of this digital method is the privacy concern, which is that the students will be closely monitored even in private spaces. However, to alleviate this, the data will be anonymised, and any data related to a particular room will be deleted at the end of the month, leaving only the weekly floor averages. Unite will adhere to the GDPR fully and will not sell the data to any third party.</p>
+        <p>A further limitation relates to the perceived value of rewards. If vouchers are viewed as insufficiently attractive, students may be unwilling to modify their behaviour. To mitigate this, vouchers can be specifically tailored to frequent student needs, for instance, supermarket discounts or free laundry credits, things that students have to use every week. For further motivation, Unite could host a celebration of achievements, for example, a pizza party whenever a floor stays below the &ldquo;bar&rdquo; for an entire month, turning utility savings from individual decisions to collective social pressure.</p>
+      </div>
+
+      <div class="content-block reveal--left">
+        <h3>Value to Customers / End-Users</h3>
+        <p>Beyond the immediate savings on the &pound;30.5 million utility bill, this solution acts as a preventative maintenance tool. This will allow Unite to identify any anomalies that could indicate faulty hardware, such as a leaky pipe or a faulty heater, and stop the problem before any expensive damage is incurred. Additionally, given the increasing focus of institutional investors on ESG considerations, this will also position Unite as a market leader in green student accommodation, which could lower the cost of future capital.</p>
+      </div>
+      </div>
+
+      <div class="word-count reveal" data-wordcount="solution-text" data-limit="800">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        Word Count: <span class="word-count__num">0</span> / 800
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Journey Maps -->
+  <section class="content-section section--grey section--wave-top">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Customer Experience</span>
+        <h2>Customer Journey Maps</h2>
+        <p class="lead">Comparing the current student energy experience with the transformed journey enabled by the Saver Plan &amp; Rewards Dashboard.</p>
+        <div class="divider"></div>
+      </div>
+
+      <!-- Journey Tabs -->
+      <div class="journey-tabs reveal">
+        <button class="journey-tab active" data-target="journey-as-is-map">As-Is: Current Experience</button>
+        <button class="journey-tab" data-target="journey-to-be-map">To-Be: With Saver Plan</button>
+      </div>
+
+      <!-- As-Is Journey -->
+      <div class="journey-map active reveal" id="journey-as-is-map">
+        <div id="journey-as-is">
+          <!-- Rendered by JS from data.js -->
+        </div>
+      </div>
+
+      <!-- To-Be Journey -->
+      <div class="journey-map reveal" id="journey-to-be-map">
+        <div id="journey-to-be">
+          <!-- Rendered by JS from data.js -->
+        </div>
+      </div>
+
+      <div class="callout reveal" style="margin-top: var(--space-xl);">
+        <p><strong>Key Transformation:</strong> The student journey shifts from passive, uninformed energy consumption with recurring pain points, to an engaged, rewarded, and transparent experience that empowers students and aligns their behaviour with Unite's sustainability objectives.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Mockups -->
+  <section class="content-section">
+    <div class="container">
+      <div class="reveal" style="text-align:center;">
+        <span class="section-label">Prototypes</span>
+        <h2>MyUnite App Mock-ups</h2>
+        <p class="lead" style="margin: 0 auto var(--space-xl);">Concept screens showing the proposed Saver Plan interface within the existing MyUnite mobile app.</p>
+      </div>
+
+      <!-- Figma/Canva placeholder -->
+      <div class="reveal" style="text-align:center; margin-bottom: var(--space-2xl);">
+        <p class="text-light text-small">Interactive HTML/CSS prototypes are displayed below, demonstrating the proposed Saver Plan interface within the MyUnite mobile app.</p>
+      </div>
+
+      <!-- HTML/CSS Mockups -->
+      <div class="mockups-grid reveal--scale">
+
+        <!-- Energy Dashboard Screen -->
+        <div>
+          <h3 style="text-align:center; margin-bottom: var(--space-lg); font-size: 1.125rem;">Energy Dashboard</h3>
+          <div class="phone-frame">
+            <div class="phone-frame__notch"></div>
+            <div class="phone-frame__screen">
+              <div class="phone-frame__status">
+                <span>9:41</span>
+                <span style="display:flex;gap:4px;align-items:center;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="6" width="3" height="12" rx="1"/><rect x="7" y="4" width="3" height="14" rx="1"/><rect x="12" y="2" width="3" height="16" rx="1"/><rect x="17" y="0" width="3" height="18" rx="1"/></svg>
+                  <svg width="18" height="14" viewBox="0 0 24 14" fill="currentColor"><rect x="0" y="1" width="20" height="12" rx="2" stroke="currentColor" fill="none" stroke-width="1.5"/><rect x="21" y="4" width="2" height="5" rx="1"/><rect x="2" y="3" width="14" height="8" rx="1" fill="#FFDC00"/></svg>
+                </span>
+              </div>
+              <div class="phone-frame__app-header">
+                <small>MyUnite</small>
+                <h4>Saver Plan Dashboard</h4>
+              </div>
+              <div class="app-content">
+                <!-- Energy Gauge -->
+                <div style="text-align:center; padding: 12px 0 0;">
+                  <div style="font-size:0.7rem; color:var(--text-light); margin-bottom:4px;">This Week's Usage</div>
+                  <div style="position:relative; width:140px; height:75px; margin:0 auto;">
+                    <svg viewBox="0 0 140 75" style="width:140px; height:75px;">
+                      <path d="M 15 70 A 55 55 0 0 1 125 70" fill="none" stroke="#E5E7EB" stroke-width="10" stroke-linecap="round"/>
+                      <path d="M 15 70 A 55 55 0 0 1 85 18" fill="none" stroke="#FFDC00" stroke-width="10" stroke-linecap="round"/>
+                    </svg>
+                    <div style="position:absolute; bottom:0; left:50%; transform:translateX(-50%); text-align:center;">
+                      <div style="font-family:var(--font-display); font-size:1.4rem; font-weight:700; color:var(--navy); line-height:1;">42</div>
+                      <div style="font-size:0.55rem; color:var(--text-light);">kWh</div>
+                    </div>
+                  </div>
+                  <div style="display:flex; justify-content:space-between; font-size:0.55rem; color:var(--text-light); padding:0 10px;">
+                    <span>0 kWh</span>
+                    <span>80 kWh</span>
+                  </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="app-stats">
+                  <div class="app-stat">
+                    <div class="app-stat__value" style="color:var(--teal);">-18%</div>
+                    <div class="app-stat__label">vs. average</div>
+                  </div>
+                  <div class="app-stat">
+                    <div class="app-stat__value">1,240</div>
+                    <div class="app-stat__label">points</div>
+                  </div>
+                  <div class="app-stat">
+                    <div class="app-stat__value" style="color:#C0C0C0;">Silver</div>
+                    <div class="app-stat__label">tier</div>
+                  </div>
+                </div>
+
+                <!-- Savings callout -->
+                <div class="savings-callout">
+                  <div class="savings-callout__amount">You're saving &pound;12.40 this month</div>
+                  <div class="savings-callout__label">Keep it up! 23% below your flat's average</div>
+                </div>
+
+                <!-- Weekly trend -->
+                <div style="font-size:0.7rem; font-weight:600; color:var(--navy); margin-bottom:4px;">Weekly Trend</div>
+                <div class="mini-chart">
+                  <div class="mini-chart__bar" style="height:60%"></div>
+                  <div class="mini-chart__bar" style="height:45%"></div>
+                  <div class="mini-chart__bar" style="height:72%"></div>
+                  <div class="mini-chart__bar" style="height:38%"></div>
+                  <div class="mini-chart__bar" style="height:55%"></div>
+                  <div class="mini-chart__bar" style="height:30%; background:var(--teal);"></div>
+                  <div class="mini-chart__bar" style="height:25%; background:var(--teal); opacity:0.5;"></div>
+                </div>
+                <div style="display:flex; justify-content:space-between; font-size:0.5rem; color:var(--text-light);">
+                  <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+                </div>
+
+                <!-- Tier Progress -->
+                <div class="tier-progress" style="margin-top: 12px;">
+                  <div style="font-size:0.7rem; font-weight:600; color:var(--navy);">Tier Progress</div>
+                  <div class="tier-progress__bar">
+                    <div class="tier-progress__fill"></div>
+                  </div>
+                  <div class="tier-progress__labels">
+                    <span>Bronze</span>
+                    <span class="active-tier">Silver</span>
+                    <span>Gold</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom nav -->
+              <div class="app-nav">
+                <div class="app-nav__item active">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  Home
+                </div>
+                <div class="app-nav__item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  Energy
+                </div>
+                <div class="app-nav__item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  Rewards
+                </div>
+                <div class="app-nav__item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  Profile
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rewards Screen -->
+        <div>
+          <h3 style="text-align:center; margin-bottom: var(--space-lg); font-size: 1.125rem;">Rewards Store</h3>
+          <div class="phone-frame">
+            <div class="phone-frame__notch"></div>
+            <div class="phone-frame__screen">
+              <div class="phone-frame__status">
+                <span>9:41</span>
+                <span style="display:flex;gap:4px;align-items:center;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="6" width="3" height="12" rx="1"/><rect x="7" y="4" width="3" height="14" rx="1"/><rect x="12" y="2" width="3" height="16" rx="1"/><rect x="17" y="0" width="3" height="18" rx="1"/></svg>
+                  <svg width="18" height="14" viewBox="0 0 24 14" fill="currentColor"><rect x="0" y="1" width="20" height="12" rx="2" stroke="currentColor" fill="none" stroke-width="1.5"/><rect x="21" y="4" width="2" height="5" rx="1"/><rect x="2" y="3" width="14" height="8" rx="1" fill="#FFDC00"/></svg>
+                </span>
+              </div>
+              <div class="phone-frame__app-header">
+                <small>MyUnite</small>
+                <h4>My Rewards</h4>
+              </div>
+              <div class="app-content">
+                <!-- Points display -->
+                <div class="reward-points">
+                  <div class="reward-points__number">1,240</div>
+                  <div class="reward-points__label">Saver Points Available</div>
+                </div>
+
+                <!-- Available vouchers -->
+                <div style="font-size:0.7rem; font-weight:600; color:var(--navy); margin-bottom:8px;">Available Vouchers</div>
+                <div class="voucher-card">
+                  <div class="voucher-card__icon">&#9749;</div>
+                  <div class="voucher-card__info">
+                    <div class="voucher-card__name">Campus Coffee Voucher</div>
+                    <div class="voucher-card__cost">200 points &bull; &pound;3.50 value</div>
+                  </div>
+                </div>
+                <div class="voucher-card">
+                  <div class="voucher-card__icon">&#127829;</div>
+                  <div class="voucher-card__info">
+                    <div class="voucher-card__name">Campus Food Hall &pound;5</div>
+                    <div class="voucher-card__cost">400 points &bull; &pound;5.00 value</div>
+                  </div>
+                </div>
+                <div class="voucher-card">
+                  <div class="voucher-card__icon">&#127947;</div>
+                  <div class="voucher-card__info">
+                    <div class="voucher-card__name">Gym Day Pass</div>
+                    <div class="voucher-card__cost">600 points &bull; &pound;8.00 value</div>
+                  </div>
+                </div>
+                <div class="voucher-card">
+                  <div class="voucher-card__icon">&#127793;</div>
+                  <div class="voucher-card__info">
+                    <div class="voucher-card__name">Sustainability Badge</div>
+                    <div class="voucher-card__cost">1000 points &bull; Profile badge</div>
+                  </div>
+                </div>
+
+                <!-- Leaderboard -->
+                <div style="font-size:0.7rem; font-weight:600; color:var(--navy); margin: 12px 0 6px;">Flat Leaderboard</div>
+                <div class="leaderboard-item">
+                  <div class="leaderboard-item__rank gold">1</div>
+                  <div class="leaderboard-item__name">Flat 4B (You)</div>
+                  <div class="leaderboard-item__points">1,240 pts</div>
+                </div>
+                <div class="leaderboard-item">
+                  <div class="leaderboard-item__rank silver">2</div>
+                  <div class="leaderboard-item__name">Flat 2A</div>
+                  <div class="leaderboard-item__points">1,180 pts</div>
+                </div>
+                <div class="leaderboard-item">
+                  <div class="leaderboard-item__rank bronze">3</div>
+                  <div class="leaderboard-item__name">Flat 6C</div>
+                  <div class="leaderboard-item__points">985 pts</div>
+                </div>
+                <div class="leaderboard-item">
+                  <div class="leaderboard-item__rank">4</div>
+                  <div class="leaderboard-item__name">Flat 1A</div>
+                  <div class="leaderboard-item__points">870 pts</div>
+                </div>
+              </div>
+
+              <!-- Bottom nav -->
+              <div class="app-nav">
+                <div class="app-nav__item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  Home
+                </div>
+                <div class="app-nav__item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  Energy
+                </div>
+                <div class="app-nav__item active">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  Rewards
+                </div>
+                <div class="app-nav__item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  Profile
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="content-section section--grey">
+    <div class="container container--narrow">
+      <div class="reveal" style="text-align:center;">
+        <span class="section-label">Presentation</span>
+        <h2>Team Video Presentation</h2>
+        <p class="lead" style="margin: 0 auto var(--space-xl);">5-minute team presentation + 1-minute Lumen5 summary</p>
+      </div>
+
+      <div class="video-container reveal">
+        <!-- REPLACE WITH YOUR YOUTUBE EMBED URL -->
+        <!-- <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe> -->
+        <div class="video-placeholder" id="video-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3" fill="rgba(255,255,255,0.2)"></polygon>
+          </svg>
+          <p>YouTube Video Embed</p>
+          <p style="font-size:0.8rem;">Replace this placeholder with your unlisted YouTube URL</p>
+          <p style="font-size:0.7rem; opacity:0.5;">Uncomment the iframe in the HTML and add your video ID</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- References -->
+  <section class="content-section">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">References</span>
+        <h2>Phase 3 References</h2>
+        <div class="divider"></div>
+        <p class="text-light text-small" style="margin-bottom: var(--space-lg);">Formatted in APA 7th Edition style.</p>
+      </div>
+      <ol class="references-list references-auto reveal">
+        <!-- Auto-populated from data.js -->
+      </ol>
+      <div class="reveal" style="margin-top: var(--space-lg);">
+        <p class="text-light text-small">All Phase 3 references are included in the master reference list.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase Navigation -->
+  <section class="section--navy section" style="padding: var(--space-2xl) 0;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md);">
+      <a href="phase2.html" class="btn btn--outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Phase 2: Ideation
+      </a>
+      <a href="references.html" class="btn btn--primary">
+        Full References
+        <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">W</div>
+          <span class="footer__brand-text">The Wise Group</span>
+          <span class="footer__brand-sep">&times;</span>
+          <img src="img/unite-students-logo.svg" alt="Unite Students" class="footer__client-logo">
+        </div>
+        <div class="footer__info">
+          MSIN0051 Digital Strategy &amp; Transformation<br>
+          University College London (UCL) &mdash; 2024/25
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 The Wise Group. Academic use only.</span>
+        <span>Client: Unite Students</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

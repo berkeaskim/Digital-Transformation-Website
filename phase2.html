@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phase 2: Ideation &amp; Evaluation — The Wise Group</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23323333' rx='18' width='100' height='100'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='%23FFDC00' font-family='serif' font-weight='bold'>W</text></svg>">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__brand">The Wise Group</div>
+    <div class="loader__bar"><div class="loader__bar-inner"></div></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <div class="nav__logo">W</div>
+        <span class="nav__brand-text">The Wise Group</span>
+        <span class="nav__brand-sep">&times;</span>
+        <img src="img/unite-students-logo.svg" alt="Unite Students" class="nav__client-logo">
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="phase1.html" class="nav__link">
+          <span class="nav__phase-num">1</span> Research &amp; Insights
+        </a>
+        <a href="phase2.html" class="nav__link active">
+          <span class="nav__phase-num">2</span> Ideation &amp; Evaluation
+        </a>
+        <a href="phase3.html" class="nav__link">
+          <span class="nav__phase-num">3</span> Digital Solution
+        </a>
+        <a href="references.html" class="nav__link">References</a>
+      </div>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Phase Header -->
+  <header class="phase-header phase-header--phase2">
+    <div class="phase-header__bg"></div>
+    <div class="phase-header__overlay" aria-hidden="true"></div>
+    <div class="container" style="position:relative; z-index:1;">
+      <div class="phase-header__number">2</div>
+      <h1 class="phase-header__title">Ideation &amp; Evaluation</h1>
+      <p class="phase-header__desc">Four digital solutions — two human-generated, two AI-generated — systematically evaluated against strategic criteria to identify the optimal intervention for Unite Students.</p>
+    </div>
+  </header>
+
+  <!-- Introduction -->
+  <section class="content-section">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <span class="section-label">Introduction</span>
+        <h2>From Insight to Action</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="reveal" id="phase2-intro-text">
+        <p>Phase 1 provided evidence that despite still being competent within their sector, Unite Students has considerable risk of jeopardizing their operations due to their increasing utility expenses (currently representing the 2nd highest line item at &pound;30.5 million). Their preferred method of billing for all services is creating &ldquo;moral hazard&rdquo; conditions for tenants where they overconsume energy and water. This is partially responsible for abating total accounting return in 2025 by 4% (from ~7.9% to ~4.0%).</p>
+        <p>In Phase 2, we transition from identifying systemic issues to generating a solution that will balance students&rsquo; need for simplicity with their urgent need for improved operational efficiency. The next section explores how digital interventions could restore consumption signals using behavioral economics and incentivize students to consume in a way that is aligned with Unite&rsquo;s cost efficiency and ESG objectives, which reduces the risk of a &ldquo;brown discount&rdquo; that threatens property values as well as greater interest rates on loans.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Cards -->
+  <section class="content-section section--grey section--wave-top">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Digital Ideas Evaluation</span>
+        <h2>Four Proposed Solutions</h2>
+        <p class="lead">Each solution was scored across four criteria on a 1–5 scale. Click "Show Details" to explore the full evaluation.</p>
+        <div class="divider"></div>
+      </div>
+
+      <!-- Solutions rendered by JS from data.js -->
+      <div class="solutions-grid reveal" id="solutions-container">
+        <!-- JS will populate this from SOLUTIONS array in data.js -->
+        <noscript>
+          <p class="placeholder-text">JavaScript is required to display the interactive solution cards. Please enable JavaScript.</p>
+        </noscript>
+      </div>
+    </div>
+  </section>
+
+  <!-- Radar Chart -->
+  <section class="content-section">
+    <div class="container">
+      <div class="reveal" style="text-align:center;">
+        <span class="section-label">Comparative Analysis</span>
+        <h2>Solutions Radar Comparison</h2>
+        <p class="lead" style="margin: 0 auto var(--space-xl);">Hover over the chart to see individual scores for each solution across the four evaluation criteria.</p>
+      </div>
+
+      <div class="radar-section reveal">
+        <div class="radar-chart-wrap">
+          <div class="flourish-embed flourish-radar active" data-src="visualisation/27589347"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27589347/thumbnail" width="100%" alt="radar visualization" /></noscript></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Conversation Transcripts -->
+  <section class="content-section section--grey section--wave-top">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">AI Transparency</span>
+        <h2>Full AI Conversation Transcripts</h2>
+        <p class="lead">Complete, unedited transcripts of our AI-assisted ideation sessions, provided for transparency and academic integrity.</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="accordion reveal">
+        <!-- NotebookLM Transcript -->
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            NotebookLM Transcript
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__body">
+              <div class="transcript-box" id="notebooklm-transcript">
+<p><strong>Session 1 &mdash; Tool: NotebookLM</strong></p>
+
+<p><strong>Prompt:</strong></p>
+<p>Generate two digital initiatives (200 word each), providing the parts below:</p>
+<p>1. brief description<br>
+2. benefits<br>
+3. is the idea new to the company (simple yes or no)<br>
+4. What strategic business challenge that your client company is faced with does this proposed initiative help to overcome?<br>
+5. What is the key supporting data and insight for this idea?<br>
+6. Include the full references (APAv7 referencing style) for academic research and secondary data that support the viability of this proposed digital initiative</p>
+<p>After all that, give them a rating from 0 to 10</p>
+<p>1. Organisational Relevance - Based on the insights gathered, is it a relevant digital solution for the organisation to spend its resources on?<br>
+2. Viability for the organisation - is it possible for the organisation to design, launch and manage this new digital initiative?<br>
+3. Customer value - if the organisation goes ahead with this new digital initiative, will it benefits customers and create new value for existing and new customers?<br>
+4. Competitive edge - if the organisation goes ahead with this new digital initiative, will it help the company to better compete against the visible and emergent competitors?</p>
+
+<p><strong>Output:</strong></p>
+
+<p><strong>Solution 1: IoT-Driven &ldquo;FloodGuard&rdquo; Predictive Risk Platform</strong></p>
+
+<p><em>Key Features:</em> This involves the deployment of a portfolio-wide IoT sensor network integrated into a centralized AI-driven dashboard to monitor real-time environmental data. &ldquo;FloodGuard&rdquo; would use predictive algorithms to identify properties at risk before flooding occurs. It moves flood mitigation from manual oversight to an automated early-warning system that triggers preventative maintenance protocols, such as automated flood barriers or pump activation.</p>
+
+<p><em>Benefits:</em><br>
+&bull; Financial: Directly mitigates the projected &pound;37.8 million in potential flooding damage costs by 2050 and assists in securing lower insurance premiums through evidenced proactive risk management.<br>
+&bull; Operational: Reduces the burden on property teams by replacing manual &ldquo;human supervision&rdquo; with automated alerts, closing the technological gap with competitors like GSA.</p>
+
+<p><em>Business Challenges:</em> This initiative addresses Climate Change Risks, specifically the tripling of assets at high risk of flooding under extreme climate scenarios.</p>
+
+<p><em>Key Data:</em> The number of assets at high risk of flooding is projected to rise from 23 to 82 by 2100. Proactive mitigation is essential to avoid the &ldquo;brown discount&rdquo; that devalues non-resilient properties.</p>
+
+<p><em>References:</em><br>
+Biggs, K. (2025). Annual Report and Accounts 2024. Unite Group. https://www.unitegroup.com/annual-report-and-accounts-2024.<br>
+Corlett, P. (2022). A &lsquo;Green Premium&rsquo; or a &lsquo;Brown Discount&rsquo;: is the data to become a quantifiable reality? https://www.blakemorgan.co.uk/a-green-premium-or-a-brown-discount-is-the-data-to-become-a-quantifiable-reality/.<br>
+Unite Group PLC. (2025). Annual Report and Accounts 2024. https://www.unitegroup.com/annual-report-and-accounts-2024.</p>
+
+<hr>
+
+<p><strong>Session 2 &mdash; Tool: NotebookLM (using refined prompt from Gemini)</strong></p>
+
+<p><strong>Prompt:</strong></p>
+<p>Role: You are a Digital Strategy Consultant specialized in the Purpose-Built Student Accommodation (PBSA) sector.</p>
+<p>Context: Your client is Unite Students. Based on the &ldquo;Annual Report 2024&rdquo; and the &ldquo;Insights Brief&rdquo; provided in the sources, the company is facing significant strategic challenges:</p>
+<p>1. Rising Utility Costs: Fixed utility bills increased by 13% to &pound;30.5 million, impacting yields (Insights Brief).<br>
+2. Climate Change Risks: A projected tripling of properties at risk of overheating and &pound;37.8 million in potential flooding damage costs by 2050 (Insights Brief).<br>
+3. Operational Efficiency: The need to maintain high customer satisfaction (currently NPS +50) while managing a portfolio of 153 properties (Annual Report 2024).</p>
+<p>Task: Generate two digital initiatives (approx. 200 words each) to address these challenges. For each initiative, provide the following parts:</p>
+<p>1. Brief description<br>
+2. Benefits (Financial, Operational, and Customer-centric)<br>
+3. Is the idea new to the company? (Simple Yes or No. Check the Annual Report to see if they already have similar tech, like the &ldquo;new student app&rdquo;).<br>
+4. Strategic business challenge: Which specific challenge from the context above does this solve?<br>
+5. Key supporting data and insight: Use specific figures from the provided sources (e.g., utility spend, yield drops, or sustainability targets).<br>
+6. Full references (APA v7 style): Include citations for the source documents and any secondary data mentioned in the &ldquo;Insights Brief&rdquo; (e.g., Hepi 2024, Knight Frank 2025, or Allen 2025).</p>
+<p>Evaluation: After describing both initiatives, provide a Rating (0 to 10) for each based on:</p>
+<p>1. Organisational Relevance: How well does it align with Unite&rsquo;s &ldquo;Home for Success&rdquo; purpose and &ldquo;Net Zero by 2030&rdquo; goal?<br>
+2. Viability: Is it feasible given their current infrastructure and &pound;50-75m annual refurbishment budget?<br>
+3. Customer Value: Does it improve the student experience or wellbeing?<br>
+4. Competitive Edge: Does it differentiate Unite from emerging PBSA competitors?</p>
+<p>Tone: Professional, strategic, and data-driven. Use the &ldquo;Insights Brief&rdquo; as the primary source for the problem and the &ldquo;Annual Report 2024&rdquo; for the organisational context.</p>
+
+<p><strong>Output:</strong></p>
+
+<p>As a Digital Strategy Consultant, I have refined the following two initiatives to be approximately 200 words each, focusing on the data insights from the &ldquo;Insights Brief&rdquo; and the &ldquo;Annual Report 2024.&rdquo;</p>
+
+<p><strong>Initiative 1: AI-Powered &ldquo;Saver Plan&rdquo; &amp; Reward Dashboard</strong></p>
+
+<p><em>Description:</em> This initiative integrates a gamified &ldquo;Saver Plan&rdquo; module into the MyUnite app. Using IoT smart meter data, the platform provides real-time energy feedback at the flat level. To address the &ldquo;moral hazard&rdquo; of all-inclusive billing &mdash; where students currently maximize usage to increase perceived value &mdash; the system uses AI benchmarks to award digital retail vouchers to students who maintain consumption below historical averages.</p>
+
+<p><em>Benefits:</em><br>
+Financial: Directly targets the &pound;30.5 million annual utility expense (Unite&rsquo;s second-largest cost) which rose 13% in 2024.<br>
+Operational: Shifts management from &ldquo;human supervision&rdquo; to automated digital engagement.<br>
+Customer-centric: Appeals to the 69% of students who want more control and the 76% prioritizing affordability.</p>
+
+<p><em>New to Company:</em> Yes. While a new app launched in 2024, it focuses on social networking and wellbeing rather than energy incentives.</p>
+
+<p><em>Strategic Challenge:</em> Rising Utility Costs and yield protection.</p>
+
+<p><em>Supporting Data:</em> Total accounting returns dropped from 7.9% to 4.0% due to utility spikes. Research indicates students adopt sustainable habits when feedback is paired with monetary rewards.</p>
+
+<p><em>References:</em><br>
+Biggs, K. (2025). Annual Report and Accounts 2024. Unite Group.<br>
+Ivanova et al. (2025). PUMA ENERGY LLP RESEARCH REPORT. Nottingham Trent University.<br>
+Knight Frank. (2025). UK Student Accommodation Outlook 2025/26.</p>
+
+<p><em>Evaluation (0-10):</em> Relevance: 10 | Viability: 9 | Customer Value: 10 | Competitive Edge: 8</p>
+
+<p><strong>Initiative 2: AI-Integrated Predictive Service &amp; Maintenance Hub (PSM-Hub)</strong></p>
+
+<p><em>Description:</em> This initiative deploys IoT vibration and acoustic sensors on critical infrastructure (lifts, boilers, pumps) across Unite&rsquo;s 153 properties. Integrated into the upcoming 2025 service platform, the PSM-Hub uses AI to predict mechanical failures. It automates work orders for 1,500 frontline colleagues and provides students with proactive digital status updates via the MyUnite app.</p>
+
+<p><em>Benefits:</em><br>
+Financial: Extends asset lifecycles and reduces emergency repair costs within the &pound;50-75 million annual refurbishment budget.<br>
+Operational: Replaces manual &ldquo;human supervision&rdquo; with data-driven workflows.<br>
+Customer-centric: Protects the record +50 NPS by ensuring service continuity.</p>
+
+<p><em>New to Company:</em> Yes. Current maintenance is reactive under the &ldquo;CARE&rdquo; model.</p>
+
+<p><em>Strategic Challenge:</em> Operational Efficiency and Customer Satisfaction.</p>
+
+<p><em>Supporting Data:</em> Maintenance activity contributed to a &pound;1.7 million increase in &ldquo;other&rdquo; costs during 2024. Proactive maintenance is vital to hit the 50bps EBIT margin improvement target for 2025.</p>
+
+<p><em>References:</em><br>
+Biggs, K. (2025). Annual Report and Accounts 2024. Unite Group.<br>
+Team, M. (2025). Global Student Accommodation (GSA) Expands Relationship with Measurabl.<br>
+Unite Group PLC. (2025). Annual Report and Accounts 2024.</p>
+
+<p><em>Evaluation (0-10):</em> Relevance: 9 | Viability: 8 | Customer Value: 10 | Competitive Edge: 9</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gemini Transcript -->
+        <div class="accordion__item">
+          <button class="accordion__trigger">
+            Gemini Transcript
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="accordion__content">
+            <div class="accordion__body">
+              <div class="transcript-box" id="gemini-transcript">
+<p><strong>Tool: Gemini</strong></p>
+
+<p><strong>Prompt:</strong></p>
+<p>To help you get the best results from NotebookLM, I have designed a prompt that specifically leverages the data and strategic challenges identified in your uploaded documents (Annual Report 2024 and the Insights Brief).</p>
+<p>This prompt is structured to ensure NotebookLM acts as a consultant, uses the specific terminology from your module (Digital Strategy and Transformation), and addresses the &ldquo;threats&rdquo; mentioned in your brief, such as rising utility costs and climate risks.</p>
+
+<p><strong>Output:</strong></p>
+
+<p>Copy and Paste this Prompt into NotebookLM:</p>
+
+<p>Role: You are a Digital Strategy Consultant specialized in the Purpose-Built Student Accommodation (PBSA) sector.</p>
+
+<p>Context: Your client is Unite Students. Based on the &ldquo;Annual Report 2024&rdquo; and the &ldquo;Insights Brief&rdquo; provided in the sources, the company is facing significant strategic challenges:</p>
+
+<p>1. Rising Utility Costs: Fixed utility bills increased by 13% to &pound;30.5 million, impacting yields (Insights Brief).<br>
+2. Climate Change Risks: A projected tripling of properties at risk of overheating and &pound;37.8 million in potential flooding damage costs by 2050 (Insights Brief).<br>
+3. Operational Efficiency: The need to maintain high customer satisfaction (currently NPS +50) while managing a portfolio of 153 properties (Annual Report 2024).</p>
+
+<p>Task: Generate two digital initiatives (approx. 200 words each) to address these challenges. For each initiative, provide the following parts:</p>
+
+<p>1. Brief description<br>
+2. Benefits (Financial, Operational, and Customer-centric)<br>
+3. Is the idea new to the company? (Simple Yes or No. Check the Annual Report to see if they already have similar tech, like the &ldquo;new student app&rdquo;).<br>
+4. Strategic business challenge: Which specific challenge from the context above does this solve?<br>
+5. Key supporting data and insight: Use specific figures from the provided sources (e.g., utility spend, yield drops, or sustainability targets).<br>
+6. Full references (APA v7 style): Include citations for the source documents and any secondary data mentioned in the &ldquo;Insights Brief&rdquo; (e.g., Hepi 2024, Knight Frank 2025, or Allen 2025).</p>
+
+<p>Evaluation: After describing both initiatives, provide a Rating (0 to 10) for each based on:</p>
+
+<p>1. Organisational Relevance: How well does it align with Unite&rsquo;s &ldquo;Home for Success&rdquo; purpose and &ldquo;Net Zero by 2030&rdquo; goal?<br>
+2. Viability: Is it feasible given their current infrastructure and &pound;50-75m annual refurbishment budget?<br>
+3. Customer Value: Does it improve the student experience or wellbeing?<br>
+4. Competitive Edge: Does it differentiate Unite from emerging PBSA competitors?</p>
+
+<p>Tone: Professional, strategic, and data-driven. Use the &ldquo;Insights Brief&rdquo; as the primary source for the problem and the &ldquo;Annual Report 2024&rdquo; for the organisational context.</p>
+
+<hr>
+
+<p><strong>Why this prompt works:</strong></p>
+
+<p><em>Source Grounding:</em> It explicitly mentions the &pound;30.5m utility cost and the overheating risk found in your Insights Brief, forcing the AI to address the specific &ldquo;pains&rdquo; your group identified.</p>
+
+<p><em>Gap Analysis:</em> It asks the AI to check the Annual Report 2024 before claiming an idea is &ldquo;new,&rdquo; ensuring it doesn&rsquo;t suggest a &ldquo;new student app&rdquo; when the report says they just launched one.</p>
+
+<p><em>Academic Rigor:</em> By instructing it to use the APA v7 style and look at the reference list in your Brief (e.g., Hepi, Knight Frank), it will help maintain the academic standard required for your MSIN0051 module.</p>
+
+<p><em>Balanced Evaluation:</em> The 0-10 rating section mirrors the &ldquo;Viability&rdquo; and &ldquo;Relevance&rdquo; criteria often used in digital strategy assessments.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Rationale -->
+  <section class="content-section">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <span class="section-label">Selection Rationale</span>
+        <h2>Why We Selected Solution 1: Real-Time Utilities Tracking &amp; Rewards</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="callout reveal" style="margin-bottom: var(--space-xl);">
+        <p><strong>Solution 1 scored 17/20</strong> — the highest across all four criteria — demonstrating the strongest alignment with Unite Students' strategic priorities, the clearest path to measurable ROI, and the greatest potential for customer value creation.</p>
+      </div>
+
+      <div class="reveal" id="rationale-text">
+        <p>Unite Students&rsquo; bills-included pricing model, while highly valued by residents, has created a structural moral hazard. With zero marginal cost for additional energy and water consumption, students are incentivised to over-consume utilities in order to &ldquo;recoup&rdquo; perceived value. This behavioural distortion has become financially material: fixed utility costs are now Unite&rsquo;s second-largest expense, rising 13% annually to &pound;30.5 million, contributing to a decline in total accounting returns from 7.9% to 4.0%.</p>
+        <p>At the same time, student demand signals strongly support a digital intervention rather than the removal of the bills-included model. While 85% of students prioritise bills-included accommodation for budget certainty, 69% also want greater control over their energy usage, and 58% actively consider sustainability features when choosing accommodation. This highlights a clear opportunity to correct consumption behaviour without undermining the value proposition students care most about.</p>
+        <p>Academic research further validates this approach, showing that students are most likely to adopt sustainable behaviours when real-time feedback is paired with visible monetary rewards, such as vouchers. Embedding real-time utilities tracking and a tiered, gamified rewards system within Unite&rsquo;s resident app directly leverages these behavioural mechanisms, reintroducing a consumption signal while maintaining pricing simplicity.</p>
+        <p>Strategically, the initiative also mitigates competitive and asset-level risks. Competitors are already deploying automated energy monitoring systems, while Unite&rsquo;s reliance on human supervision leaves it exposed to rising energy intensity, margin pressure, and potential &ldquo;brown discount&rdquo; effects on property valuation. By aligning student incentives with Unite&rsquo;s cost efficiency and ESG objectives, this solution delivers measurable financial, operational, and sustainability benefits through a single, scalable digital enhancement.</p>
+      </div>
+
+      <div class="word-count reveal" data-wordcount="rationale-text" data-limit="300">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        Word Count: <span class="word-count__num">0</span> / 300
+      </div>
+    </div>
+  </section>
+
+  <!-- References -->
+  <section class="content-section section--grey">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">References</span>
+        <h2>Phase 2 References</h2>
+        <div class="divider"></div>
+        <p class="text-light text-small" style="margin-bottom: var(--space-lg);">Formatted in APA 7th Edition style.</p>
+      </div>
+      <ol class="references-list references-auto reveal">
+        <!-- Auto-populated from data.js -->
+      </ol>
+      <div class="reveal" style="margin-top: var(--space-lg);">
+        <p class="text-light text-small">All Phase 2 references are included in the master reference list.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase Navigation -->
+  <section class="section--navy section" style="padding: var(--space-2xl) 0;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md);">
+      <a href="phase1.html" class="btn btn--outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Phase 1: Research
+      </a>
+      <a href="phase3.html" class="btn btn--primary">
+        Phase 3: Digital Solution
+        <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">W</div>
+          <span class="footer__brand-text">The Wise Group</span>
+          <span class="footer__brand-sep">&times;</span>
+          <img src="img/unite-students-logo.svg" alt="Unite Students" class="footer__client-logo">
+        </div>
+        <div class="footer__info">
+          MSIN0051 Digital Strategy &amp; Transformation<br>
+          University College London (UCL) &mdash; 2024/25
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 The Wise Group. Academic use only.</span>
+        <span>Client: Unite Students</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

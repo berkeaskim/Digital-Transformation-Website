@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phase 1: Research &amp; Insights — The Wise Group</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23323333' rx='18' width='100' height='100'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='%23FFDC00' font-family='serif' font-weight='bold'>W</text></svg>">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__brand">The Wise Group</div>
+    <div class="loader__bar"><div class="loader__bar-inner"></div></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <div class="nav__logo">W</div>
+        <span class="nav__brand-text">The Wise Group</span>
+        <span class="nav__brand-sep">&times;</span>
+        <img src="img/unite-students-logo.svg" alt="Unite Students" class="nav__client-logo">
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="phase1.html" class="nav__link active">
+          <span class="nav__phase-num">1</span> Research &amp; Insights
+        </a>
+        <a href="phase2.html" class="nav__link">
+          <span class="nav__phase-num">2</span> Ideation &amp; Evaluation
+        </a>
+        <a href="phase3.html" class="nav__link">
+          <span class="nav__phase-num">3</span> Digital Solution
+        </a>
+        <a href="references.html" class="nav__link">References</a>
+      </div>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Phase Header -->
+  <header class="phase-header phase-header--phase1">
+    <div class="phase-header__bg"></div>
+    <div class="phase-header__overlay" aria-hidden="true"></div>
+    <div class="container" style="position:relative; z-index:1;">
+      <div class="phase-header__number">1</div>
+      <h1 class="phase-header__title">Research &amp; Insights</h1>
+      <p class="phase-header__desc">A comprehensive analysis of Unite Students' strategic position, market dynamics, customer trends, and emerging technologies shaping the PBSA sector.</p>
+    </div>
+  </header>
+
+  <!-- Insights Brief -->
+  <section class="content-section">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Insights Brief</span>
+        <h2>Industry &amp; Company Analysis</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div id="insights-text">
+      <!-- Financial Performance -->
+      <div class="content-block reveal--left">
+        <h3>Financial Performance</h3>
+        <p>Unite Students had an exceptional 2025 with a significant increase in earnings by 15% to &pound;144.2 million (Allen, 2025), while achieving a 7.4% in rental growth. However, they face a threat in property yields, with total accounting returns dropping from 7.9% to 4.0%.</p>
+        <p>A major reason for dropping yields is the rise in fixed utility bills, which represent the second largest share of expenses with an 13% annual increase to &pound;30.5 million (Biggs, 2025). At the same time, the certainty of fixed income also became volatile, specifically in short-term summer rentals. Older assets become uninhabitable since the number of properties at risk of overheating due to utility abuse will triple from 44 to 128 by 2050, risking an extra &pound;15 million of income per year, while potential flooding damage costs are also projected to reach &pound;37.8 million.</p>
+        <p>If they fail to digitally transform their utilities and infrastructure, Unite risks facing a brown discount (Corlett, 2022), referring to properties that are &ldquo;not energy-efficient, sustainable, or environmentally compliant&rdquo;, dampening the value of their properties and the lending rates they charge.</p>
+      </div>
+
+      <!-- Customer Trends -->
+      <div class="content-block reveal--right">
+        <h3>Customer Trends</h3>
+        <p>Strong cost sensitivity increasingly shapes how students evaluate sustainability. Within the private landlord rental market, 58% of students check sustainability features before moving in, with energy-efficient insulation (15.2%) and smart controls for lighting and heating (12.9%) ranking among the most important decision factors. In general, rising energy prices have further increased cost-consciousness, with 69% of students wanting greater control over their energy consumption (Knight Frank, 2025).</p>
+        <p>Currently, 85% of students prioritise &ldquo;bills included&rdquo; for budget certainty and reduced flatmate conflict. However, this bundling often incentivises excessive usage as students seek to maximise perceived value. Crucially, research shows students are most likely to adopt sustainable behaviours when real-time feedback is paired with visible monetary rewards, such as vouchers (Ivanova et al., 2025), presenting a clear opportunity for Unite to align operational efficiency, sustainability goals, and student experience through smart energy management and engagement.</p>
+      </div>
+
+      <!-- Competitive Landscape -->
+      <div class="content-block reveal--left">
+        <h3>Competitive Landscape</h3>
+        <p>UK PBSA market&rsquo;s valuation is strong in 2024, totalling &pound;3.87 billion with over 76,000 beds to support growth driven by short-term occupancy levels. Unite continues to lead all peers operationally over competitors such as iQ and GSA. However, iQ has the Most Valuable London Portfolio, while also having a greater overall amount of its assets rated EPC A or B, 98.0% vs. 91.7% for Unite (Merrick, 2025). Also, GSA has recently engaged Measurabl to automate its sustainability data management system and has reduced its emissions by 3,201 metric tonnes of CO2 (Team, 2025).</p>
+        <p>Currently, Unite&rsquo;s energy intensity is lagging regarding its scheduled trajectory because of an increase in the use of student bedrooms and their legacy systems. While competitors are adopting monitoring systems based on artificial intelligence to provide them with energy savings, Unite continues to rely on human supervision. This creates a significant risk for Unite to miss its EBIT margin target of 50 basis points, which will have a substantial effect on its profitability.</p>
+      </div>
+
+      <!-- Emerging Tech -->
+      <div class="content-block reveal--right">
+        <h3>Emerging Tech in the Sector</h3>
+        <p>The UK private PBSA market grew by 76.9% since 2014/15 (Statista, 2025). Private PBSA currently has 55.92% market share, a dominance stemming from the effects of the Renters&rsquo; Rights Bill on the property market, leading to the decline of traditional HMOs.</p>
+        <p>Price sensitivity is a major affordability constraint as 77% of students are domestic (Bolton et al, 2025). In London, the average annual PBSA rent of &pound;13,595 almost equates the &pound;13,762 maximum maintenance loan, creating a significant funding gap (HEPI, 2024). To compete with proprietary residence, PBSA pricing models need to become more flexible, moving away from all-inclusive models where tenants overpay for energy wastage. Creating digital dashboards to track consumption would allow the creation of &ldquo;saver plans&rdquo;, which would appeal to 76% of students who put affordability first, whilst also maintaining a high rate of occupancy, as seen by incumbents such as Unite Group and Watkin Jones, with 56% (Allen, 2025) and 51% (Giddins, 2025) of university nominations respectively.</p>
+        <p>For Unite Students, we propose deploying EcoSync&rsquo;s smart TRV and cloud-based heating control platform to cut energy waste while enhancing digital oversight of building performance (EcoSync, 2025). EcoSync&rsquo;s retrofit TRVs allow Unite to cap temperature ranges, automatically turn off heating in void or persistently under-occupied rooms, and use AI-driven optimisation to reduce gas consumption and emissions in line with Unite&rsquo;s ESG targets. Real-world case studies such as St Edward&rsquo;s School, which achieved one-third reductions in heating demand through EcoSync, demonstrating the potential applicability of this technology to Unite&rsquo;s buildings.</p>
+        <p>Unite can draw confidence from the PBSA-specific results already delivered by Prefect Controls&rsquo; Irus system at Bangor University&rsquo;s Ffriddoedd Village, a large student village where centralised digital heating management has been successfully rolled out at scale, showing that a networked, data-driven control layer is both technically and operationally feasible in UK student accommodation.</p>
+      </div>
+      </div>
+
+      <!-- Word Count for Insights Brief -->
+      <div class="word-count" data-wordcount="insights-text" data-limit="800">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        Word Count: <span class="word-count__num">0</span> / 800
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Visualizations -->
+  <section class="content-section section--grey section--wave-top">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Data Visualizations</span>
+        <h2>Key Data &amp; Insights</h2>
+        <p class="lead">Interactive charts illustrating the financial, customer, and market dynamics informing our strategic analysis.</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="reveal">
+        <div class="flourish-embed active" data-src="story/3575679"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/story/3575679/thumbnail" width="100%" alt="visualization" /></noscript></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mapify Mindmap -->
+  <section class="content-section">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Industry Mindmap</span>
+        <h2>Industry-Level Mindmap</h2>
+        <p class="lead">A visual overview of the PBSA industry landscape, generated using Mapify AI and critically evaluated below.</p>
+        <div class="divider"></div>
+      </div>
+
+      <!-- Mindmap embed -->
+      <div class="mindmap-container reveal">
+        <div class="mindmap-container__placeholder" id="mapify-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4m-7.07-15.07l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/>
+          </svg>
+          <p>Mapify Mindmap Embed</p>
+          <a href="https://mapify.so/share-link/yGfOkrB6vH" target="_blank" rel="noopener" class="btn btn--primary" style="font-size:0.8rem; padding: 8px 20px;">
+            View on Mapify
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <p class="text-small text-light" style="margin-top: var(--space-sm);">
+            <!-- Replace this placeholder with: <iframe src="MAPIFY_EMBED_URL" width="100%" height="500" frameborder="0"></iframe> -->
+          </p>
+        </div>
+      </div>
+
+      <!-- Mapify Prompt -->
+      <div class="content-block reveal">
+        <h3>Mapify Prompt</h3>
+        <div id="mapify-prompt-text">
+          <p><strong>Tool:</strong> Mapify</p>
+          <p><strong>Input:</strong> Phase 1 Insights Brief (PDF upload)</p>
+          <p>The Mapify mindmap was generated by uploading the completed Phase 1 Insights Brief document directly into Mapify&rsquo;s AI-powered mindmap generator. No additional text prompt was required &mdash; the tool automatically parsed the document&rsquo;s structure, key themes, and data points to produce a hierarchical visual overview of the PBSA industry landscape.</p>
+        </div>
+      </div>
+
+      <!-- Mapify Critique -->
+      <div class="content-block reveal">
+        <h3>Critique of Mapify Output</h3>
+        <div id="mapify-critique-text">
+          <p>One limitation of the information on the mindmap is the lack of geographic context. Our research treats the UK PBSA market as a single entity, rather than specifically dividing the areas in terms of demand or prices. The mindmap lacks information from other major cities such as Manchester and Bristol, which arguably are facing a more severe housing shortage, or in the southern areas of England, where there is housing oversupply. Those specific circumstances can significantly influence the utility costs of accommodation and the rents that Unite can charge.</p>
+          <p>Similarly, even in the same geographical area and even the same property, Unite offers various room types from shared rooms, en-suites to studios at drastically different price points. No data is found regarding the specific demand for room types, limiting the specific applicability of the mindmap.</p>
+          <p>Another limitation is how the information generalises all domestic students as price-sensitive, ignoring the different circumstances of students coming from different parts of the UK. For instance, a student moving from London to smaller cities like Exeter will likely be more willing to accept overpriced properties since they are still by far cheaper than properties in London. There is also a lack of consideration of the price sensitivity of international students who typically are from more wealthy backgrounds.</p>
+          <p>Furthermore, the information neglects broader macroeconomic trends. In 2025, the interest rates remain higher than pre-pandemic levels, and there is heightened uncertainty in the economic policies due to the geopolitical threats by Trump in the form of tariffs, potentially contributing to a decrease in the &ldquo;Total Accounting Returns&rdquo;. Similarly, the rise in &ldquo;utility costs&rdquo; could simply be caused by the UK&rsquo;s commitment to import more expensive energy from the US instead of alternatives like OPEC. The change in immigration policies, for example, the consistent rise of maintenance requirements for student visas, could also contribute to the decrease in fixed income for Unite.</p>
+          <p>Some minor issues include how most data are long-term projections and predictions. For instance, the number of properties at risk of overheating will triple to 128 by 2050, yet they could easily be subjected to change due to further regulation or shifts in climate.</p>
+          <p>Lastly, the examples of small-scale institutions deploying EcoSync, like St. Edward&rsquo;s School, limit external validity and may not be generalisable to implementation across the country, where there would be far more students and denser living spaces.</p>
+        </div>
+        <div class="word-count" data-wordcount="mapify-critique-text" data-limit="400">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          Word Count: <span class="word-count__num">0</span> / 400
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- References -->
+  <section class="content-section section--grey">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">References</span>
+        <h2>Phase 1 References</h2>
+        <div class="divider"></div>
+        <p class="text-light text-small" style="margin-bottom: var(--space-lg);">Formatted in APA 7th Edition style.</p>
+      </div>
+      <ol class="references-list references-auto reveal">
+        <!-- Auto-populated from data.js -->
+      </ol>
+      <div class="reveal" style="margin-top: var(--space-lg);">
+        <p class="text-light text-small">All Phase 1 references are included in the master reference list.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase Navigation -->
+  <section class="section--navy section" style="padding: var(--space-2xl) 0;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md);">
+      <a href="index.html" class="btn btn--outline" style="opacity:0.7;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Home
+      </a>
+      <a href="phase2.html" class="btn btn--primary">
+        Phase 2: Ideation &amp; Evaluation
+        <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">W</div>
+          <span class="footer__brand-text">The Wise Group</span>
+          <span class="footer__brand-sep">&times;</span>
+          <img src="img/unite-students-logo.svg" alt="Unite Students" class="footer__client-logo">
+        </div>
+        <div class="footer__info">
+          MSIN0051 Digital Strategy &amp; Transformation<br>
+          University College London (UCL) &mdash; 2024/25
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 The Wise Group. Academic use only.</span>
+        <span>Client: Unite Students</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

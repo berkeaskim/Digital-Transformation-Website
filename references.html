@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>References — The Wise Group</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23323333' rx='18' width='100' height='100'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='%23FFDC00' font-family='serif' font-weight='bold'>W</text></svg>">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__brand">The Wise Group</div>
+    <div class="loader__bar"><div class="loader__bar-inner"></div></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <div class="nav__logo">W</div>
+        <span class="nav__brand-text">The Wise Group</span>
+        <span class="nav__brand-sep">&times;</span>
+        <img src="img/unite-students-logo.svg" alt="Unite Students" class="nav__client-logo">
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="phase1.html" class="nav__link">
+          <span class="nav__phase-num">1</span> Research &amp; Insights
+        </a>
+        <a href="phase2.html" class="nav__link">
+          <span class="nav__phase-num">2</span> Ideation &amp; Evaluation
+        </a>
+        <a href="phase3.html" class="nav__link">
+          <span class="nav__phase-num">3</span> Digital Solution
+        </a>
+        <a href="references.html" class="nav__link active">References</a>
+      </div>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Phase Header -->
+  <header class="phase-header phase-header--refs">
+    <div class="phase-header__bg"></div>
+    <div class="phase-header__overlay" aria-hidden="true"></div>
+    <div class="container" style="position:relative; z-index:1;">
+      <h1 class="phase-header__title">References</h1>
+      <p class="phase-header__desc">Complete bibliography across all three phases, formatted in APA 7th Edition style.</p>
+    </div>
+  </header>
+
+  <!-- References -->
+  <section class="content-section">
+    <div class="container container--narrow">
+      <div class="reveal">
+        <span class="section-label">Bibliography</span>
+        <h2>Full Reference List</h2>
+        <div class="divider"></div>
+        <p class="lead" style="margin-bottom: var(--space-xl);">All sources cited across Phase 1, Phase 2, and Phase 3 of this consulting engagement, compiled in alphabetical order per APA 7th Edition guidelines.</p>
+      </div>
+
+      <ol class="references-list references-auto reveal">
+        <!-- Auto-populated from data.js -->
+      </ol>
+
+      <!-- Additional references placeholder -->
+      <div style="margin-top: var(--space-2xl);">
+        <div class="reveal">
+          <h3>Additional References</h3>
+          <div class="divider"></div>
+        </div>
+        <div class="reveal">
+          <p class="text-light text-small">All references are automatically compiled from the master reference list above. No additional references required.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <section class="section--navy section" style="padding: var(--space-2xl) 0;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md);">
+      <a href="phase3.html" class="btn btn--outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Phase 3: Digital Solution
+      </a>
+      <a href="index.html" class="btn btn--primary">
+        Back to Home
+        <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">W</div>
+          <span class="footer__brand-text">The Wise Group</span>
+          <span class="footer__brand-sep">&times;</span>
+          <img src="img/unite-students-logo.svg" alt="Unite Students" class="footer__client-logo">
+        </div>
+        <div class="footer__info">
+          MSIN0051 Digital Strategy &amp; Transformation<br>
+          University College London (UCL) &mdash; 2024/25
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 The Wise Group. Academic use only.</span>
+        <span>Client: Unite Students</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
