@@ -1073,6 +1073,20 @@ p {
   margin-top: var(--space-md);
 }
 
+.narrative-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--text-light);
+  padding: 6px 14px;
+  background: var(--grey-light);
+  border-radius: 100px;
+  margin-top: var(--space-md);
+}
+
 .word-count--warning {
   background: var(--warm-10);
   color: var(--warm);
@@ -1094,6 +1108,7 @@ p {
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-xl);
   margin-bottom: var(--space-2xl);
+  align-items: start;
 }
 
 .solution-card {
