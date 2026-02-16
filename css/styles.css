@@ -718,28 +718,10 @@ p {
   margin-bottom: var(--space-lg);
 }
 
-.client-logo__text {
-  font-family: var(--font-body);
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--navy);
-  letter-spacing: -0.02em;
-}
-
-.client-logo__text span {
-  color: var(--navy);
-  position: relative;
-}
-
-.client-logo__text span::after {
-  content: '';
-  position: absolute;
-  bottom: 2px;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: var(--teal);
-  border-radius: 2px;
+.client-logo__img {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 
 /* ─── 10. PHASE CARDS (HOME) ──────────────────────── */
